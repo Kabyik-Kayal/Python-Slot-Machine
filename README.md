@@ -1,63 +1,106 @@
-# Python Slot Machine
+# 🎰 Python Slot Machine 🎰
 
-A command-line based slot machine game built with Python that simulates a real casino slot machine experience.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python 3.x](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/downloads/)
+[![Tkinter](https://img.shields.io/badge/GUI-Tkinter-brightgreen.svg)](https://docs.python.org/3/library/tkinter.html)
 
-## Features
+<div align="center">
+  <p><strong>A casino-style slot machine game built with Python!</strong></p>
+  <p>Test your luck with this exciting slot machine simulator available in both CLI and GUI versions.</p>
+</div>
 
-- Deposit money into the game
-- Choose the number of lines to bet on (1-3)
-- Place bets on each line within limits ($1-$100)
-- Spin the slot machine
-- View winnings and balance updates
-- Cash out at any time
+## 📸 Screenshots
 
-## How to Play
+<div align="center">
+  <img src="assets/app image.jpg" width="400" alt="GUI Version">
+</div>
 
-1. Run the program using Python
-2. Deposit an initial amount of money
-3. Select the number of lines to bet on (1-3)
-4. Choose your bet amount per line
-5. Spin the slot machine
-6. Win money when you get matching symbols on your bet lines
-7. Continue playing or quit with your remaining balance
+## ✨ Features
 
-## Symbol Values
+- 💰 **Deposit System** - Add funds to your virtual wallet
+- 🎮 **Flexible Betting** - Choose 1-3 lines to bet on
+- 💵 **Custom Wagers** - Place bets from $1 to $100 per line
+- 🎲 **Authentic Experience** - Real casino-style randomized results
+- 🏆 **Win Tracking** - Real-time balance and winnings display
+- 💸 **Cash Out** - Leave with your winnings anytime
+- 🎭 **Two Interfaces** - Choose between CLI or GUI versions
+- ✅ **Visual Feedback** - Animated spins and highlighted winning lines (GUI)
 
-| Symbol | Frequency | Value Multiplier |
-|--------|-----------|------------------|
-| A      | Rare      | 5x bet           |
-| B      | Uncommon  | 4x bet           |
-| C      | Common    | 3x bet           |
-| D      | Very Common | 2x bet         |
+## 🎮 How to Play
 
-## Installation
+### CLI Version
+1. Launch the terminal-based game
+2. Deposit your starting funds
+3. Select betting lines (1-3)
+4. Set your bet amount per line
+5. Spin and watch for matching symbols
+6. Win when identical symbols line up
+7. Play again or cash out your winnings
 
-1. Clone this repository:
-```
-git clone https://github.com/yourusername/python-slot-machine.git
-cd python-slot-machine
-```
+### GUI Version
+1. Launch the graphical interface
+2. Deposit funds using the deposit field
+3. Adjust lines and bet amount with the spinboxes
+4. Click **SPIN** to play a round
+5. Watch for gold-highlighted winning lines
+6. Click **CASH OUT** when you're ready to finish
 
-2. Run the game:
-```
-python main.py
-```
+## 💎 Symbol Values
 
-## Requirements
+<div align="center">
+
+| Symbol | Rarity | Multiplier |
+|:------:|:------:|:----------:|
+| **A** | 🔶 Rare | 5× bet |
+| **B** | 🔷 Uncommon | 4× bet |
+| **C** | 🔹 Common | 3× bet |
+| **D** | 🔸 Very Common | 2× bet |
+
+</div>
+
+## 🚀 Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/kabyik-kayal/python-slot-machine.git
+   cd python-slot-machine
+   ```
+
+2. **Launch the game:**
+   
+   For CLI version:
+   ```bash
+   python main.py
+   ```
+   
+   For GUI version:
+   ```bash
+   python app.py
+   ```
+
+## 📋 Requirements
 
 - Python 3.x
-- No external libraries required
+- Tkinter (included in standard Python installation)
 
-## Project Structure
+## 📁 Project Structure
 
-- `main.py` - The main game file containing all game logic and functions
+- `main.py` - Command-line interface with core game logic
+- `app.py` - GUI version built with Tkinter
 
-## License
+## 🤝 Contributing
+
+Contributions are welcome! Feel free to:
+- Report bugs
+- Suggest new features
+- Submit pull requests
+
+## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
 - Built as a Python programming exercise
-- Inspired by classic slot machine games
-- Original Code by Tech With Tim
+- Inspired by classic casino slot machines
+- CLI version based on Tech With Tim's Tutorial
