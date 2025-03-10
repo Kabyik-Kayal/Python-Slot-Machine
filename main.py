@@ -26,15 +26,19 @@ def check_winnings(columns, lines, bet, values):
     winning_lines = []
     for line in range(lines):
         symbol = columns[0][line]
+        all_same = True
+        
         for column in columns:
             symbol_to_check = column[line]
             if symbol != symbol_to_check:
+                all_same = False
                 break
-            else:
-                winnings += values[symbol] * bet
-                winning_lines.append(line+1)
         
-    return winnings,winning_lines
+        if all_same:
+            winnings += values[symbol] * bet
+            winning_lines.append(line + 1)
+        
+    return winnings, winning_lines
 
 
 
